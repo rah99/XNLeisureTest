@@ -16,7 +16,7 @@ namespace XNLeisureTest
             {
                 if (string.IsNullOrWhiteSpace((string)value)) { return null; }
 
-                var res = CountOccurance(value.ToString(), itemToFind);
+                var res = CountOccurrence(value.ToString(), itemToFind);
 
                 return res;
             }
@@ -29,7 +29,7 @@ namespace XNLeisureTest
 
                 value += add.ToString();
 
-                var res = CountOccurance(value.ToString(), itemToFind);
+                var res = CountOccurrence(value.ToString(), itemToFind);
 
                 return res;
             }
@@ -37,7 +37,7 @@ namespace XNLeisureTest
             return null;
         }
 
-        private static int CountOccurance(string str, string itemToFind)
+        private static int CountOccurrence(string str, string itemToFind)
         {
             int count = str.ToString().Count(f => f.ToString().ToLower() == itemToFind);
 
