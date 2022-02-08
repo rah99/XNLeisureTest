@@ -6,7 +6,7 @@ namespace XNLeisureTest
 {
     public class Helper
     {
-        public static int? GetTypes(Object value, int? add, string itemToFind)
+        public static Object GetTypes(Object value, int? add, string itemToFind)
         {
             if (value == null) { return null; }
 

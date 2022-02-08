@@ -16,11 +16,11 @@ namespace XNLeisureTest
             var eInSentence = Helper.GetTypes(objectModel.FindLetter, null, "e");
             var oneInNumber = Helper.GetTypes(objectModel.FindNumber, objectModel.AdditionNumber, "1");
 
-            Console.WriteLine($"The letter 'e' occurs { (eInSentence <= 1 ? "once" : eInSentence + " times") } in: \n");
+            Console.WriteLine($"The letter 'e' occurs { ((int?)eInSentence <= 1 ? "once" : eInSentence + " times") } in: \n");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(objectModel.FindLetter);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"\nThe number '1' occurs { (oneInNumber <= 1 ? "once" : oneInNumber + " times") } in: \n");
+            Console.WriteLine($"\nThe number '1' occurs { ((int?)oneInNumber <= 1 ? "once" : oneInNumber + " times") } in: \n");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(objectModel.FindNumber.ToString() + objectModel.AdditionNumber.ToString());
             Console.ForegroundColor = ConsoleColor.White;
