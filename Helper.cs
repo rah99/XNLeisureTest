@@ -39,7 +39,7 @@ namespace XNLeisureTest
 
         private static int CountOccurrence(string str, string itemToFind)
         {
-            int count = str.ToString().Count(f => f.ToString().ToLower() == itemToFind);
+            int count = str.Count(f => f.ToString().ToLower() == itemToFind);
 
             return count;
         }
