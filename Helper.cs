@@ -6,9 +6,9 @@ namespace XNLeisureTest
 {
     public class Helper
     {
-        public static Object GetTypes(Object value, int? add, string itemToFind)
+        public static Object GetTypes(object value, int? add, string itemToFind)
         {
-            if (value == null) { return null; }
+            if (value is null) { return null; }
 
             var typeCheck = value.GetType();
 
@@ -39,7 +39,7 @@ namespace XNLeisureTest
 
         private static int CountOccurrence(string str, string itemToFind)
         {
-            int count = str.Count(f => f.ToString().ToLower() == itemToFind);
+            int count = str.Count(f => f.ToString().ToLower() == itemToFind.ToLower());
 
             return count;
         }
