@@ -14,7 +14,7 @@ namespace XNLeisureTest
 
             if (typeCheck == typeof(string))
             {
-                if (string.IsNullOrWhiteSpace((string)value)) { return null; }
+                if (string.IsNullOrWhiteSpace((string)value)) { return string.Empty; }
 
                 var res = CountOccurrence(value.ToString(), itemToFind);
 
